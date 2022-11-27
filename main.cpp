@@ -1,11 +1,18 @@
 #include <iostream>
 using namespace std;
+class Room { 
+    public:
+        string type;
+        Room(){
+            cout << "Created" << endl;
+        }
+};
+class Maze {
+    public:
+        Room rooms[5][11];
+};
 int main() 
 {
-    cout << "Hello world!" << endl;
-    int x; 
-    cout << "Type a number: "; // Type a number and press enter
-    cin >> x; // Get user input from the keyboard
-    cout << "Your number is: " << x; // Display the input value
+    Maze myMaze;
     return 0;
 }
